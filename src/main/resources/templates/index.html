@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="'Portfolio - ' + ${name}">Portfolio</title>
+    <link rel="stylesheet" href="" th:href="@{/styles.css}">
+</head>
+<body>
+<header>
+    <h1 th:text="${name}">Your Name</h1>
+    <p th:text="${profession}">Your Profession</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a software developer with experience in Java, web technologies, and database management. I love building solutions that solve real-world problems.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Job Website</h3>
+        <p>Developed a comprehensive job website using Java SE, Java EE, MySQL, and JDBC. Implemented secure user authentication and user-friendly interface for various roles.</p>
+        <a href="https://github.com/Rohityadav8366" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+        <h3>Snake Game</h3>
+        <p>Created a Snake Game application using Java with a graphical user interface, applying object-oriented principles for modular code design.</p>
+        <a href="https://github.com/Rohityadav8366" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+        <h3>Nutrition App</h3>
+        <p>Developed a Nutrition app using Core Java, Spring Boot MVC, and MySQL, allowing users to search for food items and mark them as favorites.</p>
+        <a href="https://github.com/Rohityadav8366" target="_blank">View on GitHub</a>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Core Java</li>
+        <li>Spring Boot</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>MySQL, SQLite</li>
+        <li>Hibernate, JDBC</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you’d like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+    <a href="mailto:rohityadavmai8366@gmail.com">rohityadavmai8366@gmail.com</a>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/rohit-kumar-yadav/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Rohityadav8366" target="_blank">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Rohit Kumar Yadav. All Rights Reserved.</p>
+</footer>
+<script></script>
+</body>
+</html>
